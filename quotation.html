@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Offertsida</title>
+</head>
+<body>
+    <a href="index.html">Hem</a>
+    <a href="produkter.html">Produkter</a>
+    <a href="kontakt.html">Kontakt</a>
+    <br>
+    <br>
+    <form action="http://primat.se/services/sendform.aspx?xid=register&xmail= mail@mail.com" method="post">
+        <label for=" ">Ditt namn</label>
+        <input type="text" id="namn" name="namn">
+        <br>
+        <br>
+        <label for="info">Berätta om dina behov kortfattat här</label> 
+        <br>
+        <textarea id="info" rows="5" cols="80" name="info"></textarea>
+
+        <p>Välj om du är privatkund eller Företag</p>
+        <input type="radio" name="sector" id="privat" value="privat">
+        <label for="privat">Privat</label> 
+        <input type="hidden" name="sector" value="Nej">
+        <br> 
+        <input type="radio" name="sector" id="foretag" value="foretag">
+        <label for="foretag">Företag</label> <br>
+        <br>
+        <label for="foretag">Hur många anställda?</label>
+        <br>
+        <label for="privat">(Om privat hoppa över den här sektionen)</label>
+        <br>
+        <input type="radio" name="liten" id="foretag" value="1-100">
+        <label for="foretag">1-110 anställda</label>
+        <br>
+        <input type="radio" name="mellan" id="foretag" value="101-1000">
+        <label for="foretag">101-1000 anställda</label>
+        <br>
+        <input type="radio" name="stor" id="foretag" value="1000>">
+        <label for="foretag"> 1000 + anställda</label>
+        <br>
+        <input type="checkbox" id="telefoncontact1" name="telefoncontact2" value="Ja">
+        <label for="telefoncontact1">Vill du att vi ringer dig? I så fall Ange ditt nummer nedanför:</label>
+        <input type="hidden" name="telefoncontact2" value="Nej">
+        <br>
+        <br>
+        <label>Telefonummer</label>
+        <input type="text" id="telefonnummer" name="telefonnummer">
+        <br>
+        <br>
+        <input type="checkbox" id="newsletter1" name="newsletter2" value="Ja">
+        <label for="newsletter1">Vill du prenumera på vårat nyhetsbrev?</label>
+        <input type="hidden" name="newsletter2" value="Nej"> 
+        <br>
+        <br>
+        <label for=" ">Din mejl</label>
+        <br>
+        <input type="text" id="namn" name="namn">
+        <br>
+        <br>
+        <input type="date" name="Registreringsdag">
+        <br>
+        <br>
+        <input type="submit" value="Registrera dig!">
+        <br>
+        <br>
+    </form>
+
+</body>
+</html>
